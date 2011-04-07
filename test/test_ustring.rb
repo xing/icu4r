@@ -1,4 +1,4 @@
-require './icu4r'
+require 'icu4r'
 require 'test/unit'
 class UnicodeStringTest < Test::Unit::TestCase
 

@@ -1,4 +1,4 @@
-require './icu4r'
+require 'icu4r'
 require 'test/unit'
 # these tests are ICU 3.4 dependent
 class UCollatorTest < Test::Unit::TestCase

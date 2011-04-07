@@ -1,3 +1,4 @@
+$:.unshift File.expand_path('../../ext', __FILE__)
 require 'icu4r'
 str = " abcあいうえおアイウエオアイウエオ漢字,0123スクリプト".u
 puts str.inspect_names

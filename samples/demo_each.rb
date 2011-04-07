@@ -1,3 +1,4 @@
+$:.unshift File.expand_path('../../ext', __FILE__)
 require 'icu4r'
 res = {}
 src = <<-EOT
