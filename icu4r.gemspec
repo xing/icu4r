@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name        = "icu4r"
-  s.version     = "0.1.5.2011.04.06"
+  s.version     = "0.1.5.2013.04.07"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Stefan Kaes"]
   s.email       = ["stefan.kaes@xing.com"]
