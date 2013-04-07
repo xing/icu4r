@@ -13,3 +13,5 @@ end
 task :demo do
   Dir['samples/*.rb'].each {|f| system "ruby #{f}" }
 end
+
+task :default => :compile
