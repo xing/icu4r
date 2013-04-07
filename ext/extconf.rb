@@ -1,8 +1,9 @@
 require 'mkmf'
 
 if `uname -sp`.chomp =~ /Darwin/ && File.directory?("/usr/local/icu36/")
-  $CFLAGS << " -I/usr/local/icu36/include"
-  $LDFLAGS << " -L/usr/local/icu36/lib -licuuc -licui18n -licudata"
+  $INCFLAGS <<  " -I/usr/local/icu36/include "
+  $LIBPATH = ["/usr/local/icu36/lib"] | $LIBPATH
+  $LOCAL_LIBS << " -licuuc -licui18n -licudata "
 else
   $LDFLAGS << " -licuuc -licui18n -licudata -lstdc++"
 end
